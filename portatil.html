@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistema de Registros de Ventas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sistema de Registros de Ventas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="cliente.html">Registro de Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Registro de Portatiles</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <h1>Portatil</h1>
+    <div class="container">
+        <form>
+            
+            <div class="mb-3">
+                <label for="selectMarca" class="form-label">Marca :</label>
+                <select class="form-select" id="selectMarca" aria-label="marcaHelp">
+                    <option selected>MARCA</option>
+                    <option value="HP">HP</option>
+                    <option value="DELL">DELL</option>
+                    <option value="LENOVO">LENOVO</option>
+                    <option value="ASUS">ASUS</option>
+                    <option value="MSI">MSI</option>
+                    <option value="SAMSUNG">SAMSUNG</option>
+                    <option value="HUAWEI">HUAWEI</option>
+                </select>
+                <div id="marcaHelp" class="form-text">Seleccione la marca del producto.
+                </div>
+            </div>
+
+
+
+            <div class="mb-3">
+                <label for="inputModelo" class="form-label">Modelo :</label>
+                <input type="text" class="form-control" id="inputModelo" aria-describedby="modeloHelp">
+                <div id="modeloHelp" class="form-text">Ingrese el modelo del producto.
+                </div>
+            </div>
+
+            
+
+            <div class="mb-3">
+                <label for="selectProcesador" class="form-label">Procesador :</label>
+                <select class="form-select" id="selectProcesador" aria-label="procesadorHelp">
+                    <option selected>PROCESADOR</option>
+                    <optgroup label="INTEL"></optgroup>
+                    <option value="INTEL CELERON">INTEL CELERON</option>
+                    <option value="INTEL CORE I3">INTEL CORE I3</option>
+                    <option value="INTEL CORE I5">INTEL CORE I5</option>
+                    <option value="INTEL CORE I7">INTEL CORE I7</option>
+                    <optgroup label="AMD"></optgroup>
+                    <option value="AMD 3020E">AMD 3020E</option>
+                    <option value="AMD RYZEN 3">AMD RYZEN 3</option>
+                    <option value="AMD RYZEN 5">AMD RYZEN 5</option>
+                    <option value="AMD RYZEN 7">AMD RYZEN 7</option>
+                </select>
+                <div id="procesadorHelp" class="form-text">Seleccione el procesador.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="selectGeneracion" class="form-label">Seleccione la generacion del procesador :</label>
+                <select class="form-select" id="selectGeneracion" aria-label="generacionHelp">
+                    <option selected>GENERACION</option>
+                    <optgroup label="AMD GENERACION"></optgroup>
+                    <option value="TERCERA">TERCERA</option>
+                    <option value="CUARTA">CUARTA</option>
+                    <option value="QUINTA">QUINTA</option>
+                    <option value="SEXTA">SEXTA</option>
+                    <optgroup label="INTEL GENERACION"></optgroup>
+                    <option value="DECIMA">DECIMA</option>
+                    <option value="ONCEAVA">ONCEAVA</option>
+                    <option value="DOCEAVA">DOCEAVA</option>
+                </select>
+                <div id="generacionHelp" class="form-text">Seleccione la generacion del procesador.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="selectAlmacenamiento" class="form-label">Almacenamiento :</label>
+                <select class="form-select" id="selectAlmacenamiento" aria-label="almacenamientoHelp">
+                    <option selected>ALMACENAMIENTO</option>
+                    <optgroup label="Unidad de Estado Solido"></optgroup>
+                    <option value="SSD 120 GB">SSD 120 GB</option>
+                    <option value="SSD 240 GB">SSD 240 GB</option>
+                    <option value="SSD 480 GB">SSD 480 GB</option>
+                    <option value="SSD 1000 GB">SSD 1000 GB</option>
+                    <optgroup label="Disco Duro Mecanico"></optgroup>
+                    <option value="HDD 500 GB">HDD 500 GB</option>
+                    <option value="HDD 1000 GB">HDD 1000 GB</option>
+        
+                </select>
+                <div id="almacenamientoHelp" class="form-text">Seleccione la capacidad de almacenamiento.
+                </div>
+            </div>
+
+
+            
+
+                
+
+           
+                    
+        
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
