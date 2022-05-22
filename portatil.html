@@ -69,7 +69,7 @@
             <div class="mb-3">
                 <label for="selectProcesador" class="form-label">Procesador :</label>
                 <select class="form-select" id="selectProcesador" aria-label="procesadorHelp">
-                    <option selected>PROCESADOR</option>
+                    <option selected disabled>PROCESADOR</option>
                     <optgroup label="INTEL"></optgroup>
                     <option value="INTEL CELERON">INTEL CELERON</option>
                     <option value="INTEL CORE I3">INTEL CORE I3</option>
@@ -88,7 +88,7 @@
             <div class="mb-3">
                 <label for="selectGeneracion" class="form-label">Seleccione la generacion del procesador :</label>
                 <select class="form-select" id="selectGeneracion" aria-label="generacionHelp">
-                    <option selected>GENERACION</option>
+                    <option selected disabled>GENERACION</option>
                     <optgroup label="AMD GENERACION"></optgroup>
                     <option value="TERCERA">TERCERA</option>
                     <option value="CUARTA">CUARTA</option>
@@ -106,7 +106,7 @@
             <div class="mb-3">
                 <label for="selectAlmacenamiento" class="form-label">Almacenamiento :</label>
                 <select class="form-select" id="selectAlmacenamiento" aria-label="almacenamientoHelp">
-                    <option selected>ALMACENAMIENTO</option>
+                    <option selected disabled>ALMACENAMIENTO</option>
                     <optgroup label="Unidad de Estado Solido"></optgroup>
                     <option value="SSD 120 GB">SSD 120 GB</option>
                     <option value="SSD 240 GB">SSD 240 GB</option>
@@ -120,6 +120,65 @@
                 <div id="almacenamientoHelp" class="form-text">Seleccione la capacidad de almacenamiento.
                 </div>
             </div>
+
+            <div class="mb-3">
+                <label for="selectMemoria" class="form-label">Memoria RAM :</label>
+                <select class="form-select" id="selectMemoria" aria-label="memoriaHelp">
+                    <option selected disabled>Memoria RAM</option>
+                    <optgroup label="Capacidad"></optgroup>
+                    <option value="4 GB DDR4">4 GB DDR4</option>
+                    <option value="8 GB DDR4">8 GB DDR4</option>
+                    <option value="12 GB DDR4">12 GB DDR4</option>
+                    <option value="16 GB DDR4">16 GB DDR4</option>
+                    
+        
+                </select>
+                <div id="memoriaHelp" class="form-text">Seleccione la capacidad de la memoria RAM.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="selectTarjetaVideoMarca" class="form-label">Tarjeta de Video:</label>
+                <select class="form-select" id="selectTarjetaVideoMarca" aria-label="tarjetaVideoMarcaHelp">
+                    <option selected disabled>Marca y Modelo</option>
+                    <optgroup label="INTEGRADO - INTEL"></optgroup>
+                    <option value="INTEL IRIS">INTEL IRIS</option>
+                    <option value="INTEL HD GRAPHICS">INTEL HD GRAPHICS</option>
+                    <optgroup label="DEDICADO - NVIDIA"></optgroup>
+                    <option value="NVIDIA GTX 1050">GTX 1050</option>
+                    <option value="NVIDIA GTX 1050 TI">GTX 1050 TI</option>
+                    <option value="NVIDIA GTX 1650">GTX 1650</option>
+                    <option value="NVIDIA GTX 1650 TI">GTX 1650 TI</option>
+                    <option value="NVIDIA RTX 2060">RTX 2060</option>
+                    <option value="NVIDIA RTX 2060 TI">RTX 2060 TI</option>
+                    <optgroup label="DEDICADO - AMD"></optgroup>
+                    <option value="AMD RADEON VEGA">AMD RADEON VEGA</option>
+                    
+                </select>
+                <div id="tarjetaVideoMarcaHelp" class="form-text">Seleccione la marca y modelo de la tarjeta de video.
+                </div>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="selectTarjetaVideo" class="form-label">Capacidad de Tarjeta de Video :</label>
+                <select class="form-select" id="selectTarjetaVideo" aria-label="tarjetaVideoHelp">
+                    <option selected disabled>TARJETA DE VIDEO</option>
+                    <optgroup label="Integrado"></optgroup>
+                    <option value="2 GB Integrado">2 GB Integrado</option>
+                    <option value="4 GB Integrado">4 GB Integrado</option>
+                    <optgroup label="Dedicado"></optgroup>
+                    <option value="512 MB Dedicado">512 MB Dedicado</option>
+                    <option value="2 GB Dedicado">2 GB Dedicado</option>
+                    <option value="4 GB Dedicado">4 GB Dedicado</option>
+                    <option value="6 GB Dedicado">6 GB Dedicado</option>
+                </select>
+                <div id="tarjetaVideoHelp" class="form-text">Seleccione la capacidad de la tarjeta de video.
+                </div>
+            </div>
+
+            
+
 
 
             
